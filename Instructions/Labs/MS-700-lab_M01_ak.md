@@ -463,6 +463,8 @@ You are an administrator for your Team’s organization. You need to limit which
 
     2. Install **Azure AD Preview module**
 
+        <mark>Module is deprecated after March 2024</mark>
+
         In the PowerShell window, enter the following cmdlet and press **Enter**. Enter **Y** and press **Enter** to confirm the installation of an untrusted repository.
 
         ```powershell

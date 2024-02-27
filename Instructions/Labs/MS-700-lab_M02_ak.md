@@ -200,6 +200,8 @@ You need to evaluate governance for Microsoft 365 Groups before deploying them i
 
 3. Connect to your AAD tenant.
 
+    <mark>Module is deprecated after March 2024</mark>
+
     Enter the following cmdlet in the PowerShell window and press **Enter**. In the Sign-in window, sign in as the Global admin - MOD Administrator(admin@&lt;YourTenant&gt;.onmicrosoft.com).
 
     ```powershell
