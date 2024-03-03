@@ -100,7 +100,7 @@ You will change the default settings for inviting/creating guest users and then 
 
 3. Accept the guest invite
 
-	- Open a **New InPrivate window** and check the email with subject **You have been added as a guest to Contoso in Microsoft Teams** from **Outlook Web Portal** (https://outlook.live.com/owa/).
+	- Open a **New InPrivate window** and check the email with subject **You have been added as a guest to Contoso in Microsoft Teams** from **Outlook Web Portal** (https://outlook.live.com/owa/, https://outlook.office.com/mail/, https://outlook.office365.com).
 
 	- Select **Open Microsoft Teams** from the email. You will be redirected to the sign-in page with a permission consent request.
 
@@ -158,7 +158,7 @@ As a part of your system administrator role, you need to review access to resour
 
 	3. Select **Start review >** in the content of the email. 
 
-	4. From the **My Access** (Https://myaccess.microsoft.com) page, select **Review guest access across Microsoft 365 groups**. 
+	4. From the **My Access** (https://myaccess.microsoft.com) page, select **Review guest access across Microsoft 365 groups**. 
 
 	5. On the **Review guest access across Microsoft 365 groups** page, select the guest account and select **Approve**. 
 	

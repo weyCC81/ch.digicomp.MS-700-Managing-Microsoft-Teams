@@ -20,7 +20,10 @@ After you complete this lab, you will be able to:
 
 - Configure meeting settings
 
-- Create live event policies
+- Create live event policies  
+<mark>Teams live events will be deprecated on September 30, 2024</mark>
+
+    - We recommend that you use town halls instead. For details, see Plan for Teams town halls: https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls
 
 - Create a webinar
 
@@ -48,7 +51,7 @@ After you complete this lab, you will be able to:
 
 ## **Instructions**
 
-### **Exercise 1: Manage Live event and meetings experiences**
+### **Exercise 1: Manage Live event (soon deprecated) and meetings experiences**
 
 Contoso organization has deployed Microsoft 365 and is testing pilot projects on collaboration and communication scenarios to meet business requirements. The Teams admin will configure meeting policies and schedule an initial webinar for testing purposes.
 
@@ -102,7 +105,7 @@ Contoso Ltd. works with several external partners, and users often schedule meet
 
 You have successfully modified the meeting settings for all users in your tenant and disabled anonymous access to any meetings. It will take some time for the changes to be applied to the users, so you will continue with the next task and test the configured settings at the end of this lab.
 
-#### Task 4 - Create a new live event policy and restrict recording capabilities
+#### Task 4 - Create a new live event (soon deprecated) policy and restrict recording capabilities
 
 Contoso Ltd. wants to broadcast video and meeting content to large online audiences. As a Teams admin, you need to evaluate live events functionalities, including creating live events and configuring live event policies. According to Contoso Ltd. business requirements, you will need to restrict the recording options for participants of meetings and only allow recording options to manage users. Only the organizer of a live event should be able to record his meetings.
 
