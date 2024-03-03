@@ -217,7 +217,8 @@ In this task, you will install and connect with the Teams PowerShell module to y
 
 2. Open **Windows PowerShell** and run as Administrator.
 
-	- Select **Start** and search for **Windows PowerShell (Admin)**, then right select **Run as administrator**.
+	- Select **Start** and search for **Windows PowerShell (Admin)**, then right select **Run as administrator**. Note: You maybe prompted to input the passwrod for 
+          **Client 1VM**
 
 	- Confirm the **User Account Control** window with **Yes**.
 
@@ -277,14 +278,9 @@ You will create a new Microsoft 365 Group named “IT-Department,” and then ad
 
 2. In the Microsoft 365 admin center, select **Teams &amp; groups** > **Active teams &amp; groups**.
 
-3. On the **Active teams and groups** page, select **Add a group**.
+3. On the **Active teams and groups** page, select **+ Add a Microsoft 365 group**.
 
 4. Follow the **Add a group** wizard with the following information:
-
-	- Group type: Select **Microsoft 365 (recommended)**
-
-		- Select **Next**  
-
 
 	- Basics:
 
@@ -324,7 +320,7 @@ You will create a new Microsoft 365 Group named “IT-Department,” and then ad
 
 		- Select **Next**
 
-5. Select **Create group** > **Close**.
+5. Select **+ Add a Microsoft 365 group**. > **Cancel**. When prompte to close, select **Yes**.
 
 6. Wait a moment and select **Refresh** until the group is visible. You will see there is no Teams icon in the **Teams status** column.
 
@@ -381,7 +377,7 @@ In this task, **Lynne Robbins** will continue testing the self-service capabilit
 
 3. Select **Use the Web app instead** if prompted to download the Teams Desktop app. At the ‘Stay signed in to all your apps’ window, select **No, sign in to this app only**.
 
-4. Select **Join or create a team** from the lower-left corner.
+4. Select **+** from the upper-left corner.
 
 5. Select **Create team** >**From scratch** > **Private**. Enter the team name **Sales** and select **Create**.
 
@@ -401,9 +397,9 @@ Based on the organization’s requirement, unneeded groups should be deleted aut
 
 1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**.
 
-2. On the left navigation pane, select **Identity** > **Groups**.
+2. On the left navigation pane, select **Identity** > **Groups** > **All groups**.
 
-3. On the **Groups** page, select **Expiration**.
+3. On the **Groups | All groups** page, select **Expiration**.
 
 4. On the **Groups | Expiration** page, configure the following settings:
 
@@ -431,22 +427,26 @@ You are an administrator for your Team’s organization. You need to limit which
 
 2. In the Microsoft 365 admin center, select **Teams &amp; groups** > **Active teams &amp; groups**.
 
-3. On the **Active teams and groups** page, select **Add a group**.
+3. On the **Active teams and groups** page.
 
 4. Create a security group. 
 
-	Follow the **Add a group** wizard with the following information:
-
-	- Group type: Select **Security** > **Next**
+	- Navigate to the **Security groups** tab.
+        - Select the **+ Add a security group** button.
+          
+- Fill out the following information:
 	- Basics:
 
 		- Name: **GroupCreators**
 		- Description: **Users who can create Microsoft 365 Groups for new teams**
 		- Select **Next**
+    
+       - Settings:
+                - Select **Next**
 
 	- Finish: Select **Create Group** and then select **Close**
 
-	- Back to **Active teams &amp; group** page, select **Security** tab and Select on the security group **GroupCreators** you just created.
+	- Back to **Active teams &amp; group** page, select **Security groups** tab and Select on the security group **GroupCreators** you just created.
 
 	- Select **Members** tab to configure the **Owners** and **Members**.
 
@@ -562,9 +562,9 @@ As part of your Teams planning project, you will configure the naming policy whe
 
 1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**. 
 
-2. On the left navigation pane, select **Identity** > **Groups**.
+2. On the left navigation pane, select **Identity** > **All Groups**.
 
-3. On the **Groups** page, select **Naming policy**.
+3. On the **Groups** page, select **Naming policy** from the left hand side menu.
 
 4. Configure **Blocked words**
 
@@ -584,15 +584,15 @@ As part of your Teams planning project, you will configure the naming policy whe
 
     2. Add **Group_** string as prefix 
         
-        1. Select the checkbox **Add prefix**. 
-        2. Select the dropdown menu of **Select the type of prefix** and choose **String**. 
+        1. Select the dropdown menu of **Select the type of prefix** and choose **String**.
+        2.  Select the checkbox **Add prefix**. 
         3. Enter **Group_** to the text box.
 
     3. Add **Country or region** string as the suffix 
         
-        1. Select the checkbox **Add suffix**. 
-        2. Select the dropdown menu of **Select the type of suffix**, choose **String**, and enter **_** to the text box. 
-        3. Select the dropdown menu of **Select the type of suffix**, choose **Attribute**, and Select **Country or region** from the dropdown menu. 
+        1. Select the dropdown menu of **Select the type of suffix**, choose **String**, and enter **_** to the text box. 
+	2. Select the checkbox **Add suffix**. 
+        3. Select the dropdown menu of **Select another suffix**, choose **Attribute**, and Select **Country or region** from the dropdown menu. 
         
     4. Select **Save** to apply the new blocked words setting.
 
@@ -631,11 +631,11 @@ You can remove the naming policy after the test. In the following task, you will
 
 1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**.
 
-2. On the left navigation pane, select **Identity** > **Groups**.
+2. On the left navigation pane, select **Identity** > **Groups** > **All groups**.
 
-3. On the **Groups** page, select **Naming policy**.
+3. Navigate to the **Group naming policy** tab.
 
-4. On the **Groups | Naming policy** page, select **Delete policy** > **Yes**.
+5. Select **Delete policy** at the top ribbon > **Yes**.
 
 #### Task 6 – Manage policy packages
 
@@ -661,7 +661,9 @@ To avoid administrative overhead with managing large numbers of policies individ
 
 9. Turn on the setting - **Send urgent messages using priotiy notification** and select **Save**, if this setting is not already turned on.
 
-10. Update Calling policy in **Frontline worker** policy package.
+10. Press **Confirm**.
+
+12. Update Calling policy in **Frontline worker** policy package.
 
 	1. Back to **Policy packages** page.
 	2. Select **Frontline worker (default)** from the list again. 
@@ -669,22 +671,23 @@ To avoid administrative overhead with managing large numbers of policies individ
 	4. Turn **On** the setting - **Prevent toll bypass and send calls through the PSTN**.
 	5. Update **Busy on busy when in a call** to **On**.
 	6. Select **Save**.
+    	7. Select **Confirm**.
 
-11. Navigate to **Policy Packages** from the left navigation pane.
+13. Navigate to **Policy Packages** from the left navigation pane.
 
-12. Make sure **Frontline worker** policy package is checked.
+14. Make sure **Frontline worker** policy package is checked.
 
-13. Select **Manage users** from the top menu.
+15. Select **Manage users** from the top menu.
 
-14. Type **Allan** into the search box, select **Add** right from **Allan Deyoung** and **Apply**.
+16. Type **Allan** into the search box, select **Add** right from **Allan Deyoung** and **Apply**.
 
-15. Check the policy assignment.
+17. Check the policy assignment.
 
 	1. Select **Users** > **Manage users** from the left-side pane.
 
 	2. Select **Allan Deyoung** and select **Policies** tab.
 
-	3. You can see the **Frontline worker** under policy package section.
+	3. You can see the **Frontline worker (Direct)** under policy package section.
 
 You have successfully modified included policies from an existing policy package and assigned the package to a single user. This will help you assign the same set of policies to a group of users working in the same role or requiring the same access.
  
@@ -707,7 +710,7 @@ In this exercise, you will configure users to explore and evaluate upcoming feat
 
 	- Name: **Enable Preview features**
 	- Description: **Enable Teams public preview**
-	- Show preview features: select **Enabled** 
+	- Show preview features: select **On for everyone** 
 	- Select **Apply** 
 
 You now completed creating a custom **Teams Update policy.**
@@ -729,6 +732,6 @@ Now you need to assign the custom Update policy to specific users because it doe
 	* Lynne Robbins 
 	* Diego Siciliani 
 
-5. Select **Apply** to assign the custom update policy created in task 1.
+5. Select **Apply** then **Confirm** to assign the custom update policy created in task 1.
 
 END OF LAB
