@@ -399,7 +399,7 @@ Your organization has started the planning process for Microsoft 365 services ad
 
 Based on the organization’s requirement, unneeded groups should be deleted automatically after 90 days. To evaluate the expiration feature for Teams, you will configure a group expiration policy that will expire the **Teams Rollout** group after 90 days.
 
-1. Connect to the **Client 1 VM** and browse to Azure AD admin center (https://aad.portal.azure.com/) as **MOD Administrator**.
+1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**.
 
 2. On the left navigation pane, select **Identity** > **Groups**.
 
@@ -479,12 +479,12 @@ You are an administrator for your Team’s organization. You need to limit which
         Connect-AzureAD
         ```
 
-    4. Load the Azure AD unified group template, by using the following cmdlet:
+    4. Load the Entra ID (Azure AD) unified group template, by using the following cmdlet:
 
         ```powershell
         $Template = Get-AzureADDirectorySettingTemplate | Where {$_.DisplayName -eq "Group.Unified"}
         ```
-    5. Check if an Azure AD setting is already existing and load it, if yes. If not, create a blank Azure AD setting object. Run the following cmdlet to populate the "$Setting" variable:
+    5. Check if an Azure AD setting is already existing and load it, if yes. If not, create a blank Entra ID (Azure AD) setting object. Run the following cmdlet to populate the "$Setting" variable:
 
         ```powershell
         if(!($Setting = Get-AzureADDirectorySetting | Where {$_.TemplateId -eq $Template.Id})) {$Setting = $Template.CreateDirectorySetting()}
@@ -529,12 +529,12 @@ You are an administrator for your Team’s organization. You need to limit which
 
     1. Connect to the **Client 1 VM** where you have **Windows PowerShell** opened.  
     
-    2. Load the Azure AD unified group template, by using the following cmdlet:
+    2. Load the Entra ID (Azure AD) unified group template, by using the following cmdlet:
 
         ```powershell
         $Template = Get-AzureADDirectorySettingTemplate | Where {$_.DisplayName -eq "Group.Unified"}
         ```
-    3.	Create a blank Azure AD tenant settings object:
+    3.	Create a blank Entra ID (Azure AD) tenant settings object:
 
         ```powershell
         $Setting = $Template.CreateDirectorySetting()
@@ -554,13 +554,13 @@ You are an administrator for your Team’s organization. You need to limit which
 9. Close the PowerShell window and continue to the next task.
 	
 	
-In this task, you have successfully created a new security group and configured Azure AD settings to restrict the creation of new groups to members of this group only. At the end of the task, you have successfully tested the new group creation restrictions.
+In this task, you have successfully created a new security group and configured Entra ID (Azure AD) settings to restrict the creation of new groups to members of this group only. At the end of the task, you have successfully tested the new group creation restrictions.
 
 #### Task 3 - Configure a new naming policy
 
 As part of your Teams planning project, you will configure the naming policy where each new Microsoft 365 group or team needs to comply with the organization’s regulations on naming objects. Each group name should start with the letters **Group** and end with the **Country** attribute of the owners’ location. Furthermore, there is an internal regulation that forbids using the following specific keywords in Teams names: **CEO**, **Payroll**, and **HR**.
 
-1. Connect to the **Client 1 VM** and browse to Azure AD admin center (https://aad.portal.azure.com/) as **MOD Administrator**. 
+1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**. 
 
 2. On the left navigation pane, select **Identity** > **Groups**.
 
@@ -629,7 +629,7 @@ You have successfully tested the naming policy for managing the prefix and suffi
 
 You can remove the naming policy after the test. In the following task, you will remove the naming policy you just created.
 
-1. Connect to the **Client 1 VM** and browse to Azure AD admin center (https://aad.portal.azure.com/) as **MOD Administrator**.
+1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**.
 
 2. On the left navigation pane, select **Identity** > **Groups**.
 

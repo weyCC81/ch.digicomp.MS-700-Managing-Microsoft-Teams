@@ -40,13 +40,13 @@ After you complete this lab, you will be able to:
 
 ### **Exercise 1: Manage guest access for Microsoft Teams**
 
-In this exercise, you will test the guest access features in Microsoft 365. To do so, you will configure guest access in Azure AD, add a new external guest user and revoke the guest access by using access reviews.
+In this exercise, you will test the guest access features in Microsoft 365. To do so, you will configure guest access in Entra ID (Azure AD), add a new external guest user and revoke the guest access by using access reviews.
 
 #### Task 1 - Review guest access settings (optional)
 
-1. Connect to the **Client 1 VM** and browse to Azure AD admin center (https://aad.portal.azure.com/) as **MOD Administrator**.
+1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**.
 
-2. In left navigation of the Azure AD admin center, select **Identity** > **Users**> **User settings** > **Manage external collaboration settings** under the External users. Review the following settings for external users at the Azure AD level:
+2. In left navigation of the Entra ID (Azure AD) admin center, select **Identity** > **Users**> **User settings** > **Manage external collaboration settings** under the External users. Review the following settings for external users at the Entra ID (Azure AD) level:
 
 	- **Guest user access**: Guest users have limited access to properties and memberships of directory objects.
 
@@ -120,7 +120,7 @@ You have successfully invited a guest to a team and validated the guest access s
 
 As a part of your system administrator role, you need to review access to resources in your tenant regularly. You can do that by creating an access review.
 
-1. Connect to the **Client 1 VM** and browse to Azure AD admin center (https://aad.portal.azure.com/) as **MOD Administrator**. 
+1. Connect to the **Client 1 VM** and browse to Entra ID (Azure AD) admin center (https://entra.microsoft.com, https://aad.portal.azure.com/) as **MOD Administrator**. 
 
 2. Create an access review to monitor guest users.
 
@@ -140,7 +140,7 @@ As a part of your system administrator role, you need to review access to resour
 
 	3. On the **Settings** tab, leave the settings as default. Select on **Next: Review+Create** > **Create**. 
 
-3. Review the access review dashboard from Azure AD.
+3. Review the access review dashboard from Entra ID (Azure AD).
 
 	1. On the **Identity Governance | Access reviews** page, you will see an access review report named **Review guest access across Microsoft 365 groups**
 
@@ -192,7 +192,7 @@ Before deploying Microsoft Teams in your organization, you need to evaluate Micr
 
 #### Task 1 – Activate sensitivity labels for Teams
 
-You need to evaluate governance for Microsoft 365 Groups before deploying them in your organizations. In this task, you will activate the sensitivity labels for Teams in Azure AD, for being able to assign labels to teams.
+You need to evaluate governance for Microsoft 365 Groups before deploying them in your organizations. In this task, you will activate the sensitivity labels for Teams in Entra ID (Azure AD), for being able to assign labels to teams.
 
 1. Connect to the **Client 1 VM** with the credentials that have been provided to you.
 
@@ -207,7 +207,7 @@ You need to evaluate governance for Microsoft 365 Groups before deploying them i
     ```powershell
     Connect-AzureAD
     ```
-4. Fetch the current group settings for the Azure AD organization
+4. Fetch the current group settings for the Entra ID (Azure AD) organization
 
    ```powershell
    $Setting = Get-AzureADDirectorySetting -Id (Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ).id
@@ -234,7 +234,7 @@ You need to evaluate governance for Microsoft 365 Groups before deploying them i
     Disconnect-AzureAD
     ```
 
-You have successfully changed your tenant’s Azure AD settings and activated sensitivity labels for Microsoft 365 Groups and Microsoft Teams.
+You have successfully changed your tenant’s Entra ID (Azure AD) settings and activated sensitivity labels for Microsoft 365 Groups and Microsoft Teams.
 
 #### Task 2 - Configure sensitivity labels for Teams
 
@@ -276,7 +276,7 @@ After activating sensitivity labels for groups, you will now create three sensit
 	
 		* Select **Control external sharing from labeled SharePoint sites** and select **Anyone**.
 
-		* Select **Use Azure AD Conditional Access to protect labeled SharePoint sites** and select  **Allow full access from desktop apps, mobile apps, and the web**.
+		* Select **Use Entra ID (Azure AD) Conditional Access to protect labeled SharePoint sites** and select  **Allow full access from desktop apps, mobile apps, and the web**.
 
 	7. In the **Schematized data assets (preview)** section, leave the settings as default and select **Next**.
 
@@ -331,7 +331,7 @@ After activating sensitivity labels for groups, you will now create three sensit
 	
 		* Select **Control external sharing from labeled SharePoint sites** and select **Existing guests**.
 
-		* Select **Use Azure AD Conditional Access to protect labeled SharePoint sites** and select  **Allow limited, web-only access**.
+		* Select **Use Entra ID (Azure AD) Conditional Access to protect labeled SharePoint sites** and select  **Allow limited, web-only access**.
 
 	10. In the **Schematized data assets (preview)** section, leave the settings as default. 
 
@@ -384,7 +384,7 @@ After activating sensitivity labels for groups, you will now create three sensit
 	
 		* Select **Control external sharing from labeled SharePoint sites** and select **Only people in your organization**.
 
-		* Select **Use Azure AD Conditional Access to protect labeled SharePoint sites** and select **Block access**.
+		* Select **Use Entra ID (Azure AD) Conditional Access to protect labeled SharePoint sites** and select **Block access**.
 
 	10. In the **Schematized data assets (preview)** section, leave the settings as default. 
 

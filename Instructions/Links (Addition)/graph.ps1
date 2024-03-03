@@ -24,7 +24,7 @@ Connect-MgGraph -ContextScope Process -Scopes "Directory.ReadWrite.All" -NoWelco
 # Directory.Read.All, Directory.ReadWrite.All
 #Group.Read.All , Group.ReadWrite.All 
 
-# 4. Load the Azure AD unified group template, by using the following cmdlet:
+# 4. Load the Entra ID (Azure AD) unified group template, by using the following cmdlet:
 #$Template = Get-AzureADDirectorySettingTemplate | Where-Object {$_.DisplayName -eq "Group.Unified"}
     #(Find-MgGraphCommand -Command Get-MgBetaDirectorySettingTemplate).Permissions
 $Template = Get-MgBetaDirectorySettingTemplate | Where-Object {$_.DisplayName -eq "Group.Unified"}
@@ -32,7 +32,7 @@ $Template = Get-MgBetaDirectorySettingTemplate | Where-Object {$_.DisplayName -e
     #$TemplateId = (Get-MgBetaDirectorySettingTemplate | where { $_.DisplayName -eq "Group.Unified" }).Id
     #$Template = Get-MgBetaDirectorySettingTemplate | where -Property Id -Value $TemplateId -EQ
 
-# 5. Check if an Azure AD setting is already existing and load it, if yes. If not, create a blank Azure AD setting object. Run the following cmdlet to populate the "$Setting" variable:
+# 5. Check if an Entra ID (Azure AD) setting is already existing and load it, if yes. If not, create a blank Entra ID (Azure AD) setting object. Run the following cmdlet to populate the "$Setting" variable:
 #if(!($Setting = Get-AzureADDirectorySetting | Where-Object {$_.TemplateId -eq $Template.Id})) {$Setting = $Template.CreateDirectorySetting()}
     #(Find-MgGraphCommand -Command Get-MgBetaDirectorySetting).Permissions
     (Find-MgGraphCommand -Command New-MgBetaDirectorySetting).Permissions
@@ -105,7 +105,7 @@ Update-MgBetaDirectorySetting -DirectorySettingId $Setting.Id -BodyParameter $pa
 #Connect-AzureAD
 Connect-MgGraph -ContextScope Process -Scopes "Directory.ReadWrite.All" -NoWelcome
 
-#4. Fetch the current group settings for the Azure AD organization
+#4. Fetch the current group settings for the Entra ID (Azure AD) organization
 #$Setting = Get-AzureADDirectorySetting -Id (Get-AzureADDirectorySetting | Where-Object -Property DisplayName -Value "Group.Unified" -EQ).id
 $Setting = Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "Group.Unified"}
 if(![Boolean](Get-MgBetaDirectorySetting)){Write-Warning "Create DirectorySetting from Template first"}
