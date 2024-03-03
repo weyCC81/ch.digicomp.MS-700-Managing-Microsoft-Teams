@@ -575,12 +575,15 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 9. Enter the following information:
 
 	- Add a name for your auto attendant: **Contoso Auto attendant**
+	  <mark>or Contoso Auto Attendant Resource Account</mark>
 
 	- Operator: **Voice app**
 
 	- Search by resource account: **Contoso Call Queue Resource Account**
+	  <mark>not Contoso Auto attendant Resource Account</mark>
 
 	- Time zone: **(UTC-08:00) Pacific Time (US &amp; Canada)**
+	  <mark> or (UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</mark>
 
 	- Language: **English (United States)**
 
@@ -599,6 +602,7 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 	- Redirect to: **Voice app**
 
 	- Search by resource account: **Contoso Call Queue Resource Account**
+	  <mark>not Contoso Auto attendant Resource Account</mark>
 
 12. Select **Next**.
 
@@ -622,7 +626,7 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 
 16. On the **Dial scope** page, select **Next**.
 
-17. On the **Resource accounts** page, select **Add**. In the right-side pane, type **Contoso auto attendant**, and then select **Add** twice.
+17. On the **Resource accounts** page, select **Add**. In the right-side pane, type **Contoso auto attendant**, and then select **Add** twice. <mark>or Contoso Auto Attendant Resource Account</mark>
 
 18. Select **Submit** to finish the creation of the auto attendant.
 
