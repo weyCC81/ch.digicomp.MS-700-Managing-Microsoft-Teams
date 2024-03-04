@@ -1,48 +1,58 @@
 # FAQ
 
-### Title
+## Teams Licensing
+
+**Microsoft 365 Licensing**
+- <https://m365maps.com/>
+- <https://m365maps.com/matrix.htm#111111000001111000000>
+- <https://m365maps.com/files/Microsoft-Teams-Premium.htm>
+
+**Complete Office 365 and Microsoft 365 Licensing Comparison**
+- <https://www.infusedinnovations.com/blog/secure-modern-workplace/complete-office-365-and-microsoft-365-licensing-comparison>
+
+## Network Test
+
+- <https://connectivity.office.com>
+> Sign in (Download and Run Agent for Extended Report)
+
+## Calling Plan
 
 ### Calling Plan (Optional) - US
 
 Contoso Emergency Address
-> 1 Microsoft Way, Redmond, WA 98052
+> 1 Microsoft Way, Redmond, WA 98052  
 > 1 NE One Microsoft Way, Redmond WA 98052, US, --> did not work
 
 Contoso  United States Emergency Address
-> One Microsoft Way, Redmond, WA 98052, Vereinigte Staaten
+> One Microsoft Way, Redmond, WA 98052, Vereinigte Staaten  
 > 1 NE One Microsoft Way, Redmond WA 98052, US, --> did not work?
 
 ### Calling Plan (Optional) - CA
 
-
 Contoso Canada Emergency Address
-> Microsoft Canada
-> 2640 Bd Laurier Microsoft, Québec, QC G1V 5C2, Kanada
+> Microsoft Canada  
+> 2640 Bd Laurier Microsoft, Québec, QC G1V 5C2, Kanada  
 > 2640 Boulevard Laurier, Québec QC G1V 4M6, CA, --> worked
 
-
-
-**Get numbers**
+**Get numbers**  
 Get phone number support
 Review your information displayed below. If everything looks good, submit your order. We'll let you know when your numbers are ready to go, or if there are any issues.
 
-**Requested:**
-Country or region: Canada
-Number usages: User
-Area code: 581
-Location: Contoso
-Quantity: 1
-Reserved numbers: +1 581 702 4097
+**Requested:**  
+    Country or region: Canada  
+    Number usages: User  
+    Area code: 581  
+    Location: Contoso  
+    Quantity: 1  
+    Reserved numbers: +1 581 702 4097  
 
 ### Resource Account license allocation
 
-https://learn.microsoft.com/en-us/microsoftteams/teams-add-on-licensing/virtual-user
+<https://learn.microsoft.com/en-us/microsoftteams/teams-add-on-licensing/virtual-user>
 
 Your organization is allotted Teams Phone Resource Account licenses based on its overall size. Any organization that has a subscription with Phone System features, such as Teams Phone Standard, Teams Phone with Calling Plan, and Teams Shared Devices licenses, is <mark>allocated 25 Teams Phone Resource Account licenses available at no cost</mark>.
 
 For <mark>every 10 user</mark> licenses of Teams Phone Standard, Teams Phone with Calling Plan, or devices with Teams Shared Devices license in your organization, <mark>one more Teams Phone Resource Account license becomes available</mark>. Most organizations will have enough Teams Phone Resource Account licenses based on this scaling plan.
-
-
 
 #### PowerShell Snippet
 
@@ -65,5 +75,3 @@ Connect-MgGraph -ContextScope Process
 #Find-MgGraphCommand -Command *SettingTemplate*
 
 ```
-
-

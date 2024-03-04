@@ -1,4 +1,5 @@
-
+#Install-Module MicrosoftTeams -Scope AllUsers
+Install-Module Microsoft.Graph -Scope AllUsers
 
 
 #Connect-MgGraph -Scopes "Team.Create"
