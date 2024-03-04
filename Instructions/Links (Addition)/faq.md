@@ -3,17 +3,30 @@
 ## Teams Licensing
 
 **Microsoft 365 Licensing**
+
 - <https://m365maps.com/>
 - <https://m365maps.com/matrix.htm#111111000001111000000>
 - <https://m365maps.com/files/Microsoft-Teams-Premium.htm>
 
 **Complete Office 365 and Microsoft 365 Licensing Comparison**
+
 - <https://www.infusedinnovations.com/blog/secure-modern-workplace/complete-office-365-and-microsoft-365-licensing-comparison>
 
 ## Network Test
 
 - <https://connectivity.office.com>
+
 > Sign in (Download and Run Agent for Extended Report)
+
+## Guest User vs External User
+
+B2B Collaboration = Guest User
+B2B Direct Connect = External User
+
+## Restrict Team (Groups) to Join Guests
+
+- AllowToAddGuests
+see [path2_graph-guest_optional.ps1]
 
 ## Calling Plan
 
