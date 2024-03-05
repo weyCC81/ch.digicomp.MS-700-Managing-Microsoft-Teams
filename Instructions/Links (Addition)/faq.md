@@ -2,13 +2,13 @@
 
 ## Teams Licensing
 
-**Microsoft 365 Licensing**
+### Microsoft 365 Licensing
 
 - <https://m365maps.com/>
 - <https://m365maps.com/matrix.htm#111111000001111000000>
 - <https://m365maps.com/files/Microsoft-Teams-Premium.htm>
 
-**Complete Office 365 and Microsoft 365 Licensing Comparison**
+### Complete Office 365 and Microsoft 365 Licensing Comparison
 
 - <https://www.infusedinnovations.com/blog/secure-modern-workplace/complete-office-365-and-microsoft-365-licensing-comparison>
 

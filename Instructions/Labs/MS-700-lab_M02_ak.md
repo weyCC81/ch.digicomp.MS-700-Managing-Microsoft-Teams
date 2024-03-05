@@ -86,7 +86,9 @@ In this task, you will add a guest user by inviting the guest to the team **Grou
 
 You will change the default settings for inviting/creating guest users and then add your personal Outlook.com account as a guest user to your tenant.
 
-**Note**: You will need an Outlook.com account for this exercise. If you don’t have an outlook account, you can create a new account from [**https://outlook.com**](https://outlook.com/).
+**Note**: You will need an Outlook.com account <mark>Consumer-Account</mark> for this exercise. If you don’t have an outlook account, you can create a new account from [**https://outlook.com**](https://outlook.com/).
+
+<mark> or add another Work-Account (Company vs Teacher)</mark>
 
 1. Connect to the **Client 2 VM** and open the **Teams desktop client** (https://teams.microsoft.com/) as **Alex Wilber** (AlexW@&lt;YourTenant&gt;.onmicrosoft.com)
 
@@ -100,7 +102,8 @@ You will change the default settings for inviting/creating guest users and then 
 
 3. Accept the guest invite
 
-	- Open a **New InPrivate window** and check the email with subject **You have been added as a guest to Contoso in Microsoft Teams** from **Outlook Web Portal** (https://outlook.live.com/owa/, https://outlook.office.com/mail/, https://outlook.office365.com).
+	- Open a **New InPrivate window** and check the email with subject **You have been added as a guest to Contoso in Microsoft Teams** from **Outlook Web Portal** (https://outlook.live.com/owa/)
+	- <mark>for consumer or for Work-Account use (https://outlook.office.com/mail/, https://outlook.office365.com).
 
 	- Select **Open Microsoft Teams** from the email. You will be redirected to the sign-in page with a permission consent request.
 

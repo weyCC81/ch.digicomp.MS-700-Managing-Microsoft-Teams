@@ -35,7 +35,7 @@ $Template = Get-MgBetaDirectorySettingTemplate | Where-Object {$_.DisplayName -e
 # 5. Check if an Entra ID (Azure AD) setting is already existing and load it, if yes. If not, create a blank Entra ID (Azure AD) setting object. Run the following cmdlet to populate the "$Setting" variable:
 #if(!($Setting = Get-AzureADDirectorySetting | Where-Object {$_.TemplateId -eq $Template.Id})) {$Setting = $Template.CreateDirectorySetting()}
     #(Find-MgGraphCommand -Command Get-MgBetaDirectorySetting).Permissions
-    (Find-MgGraphCommand -Command New-MgBetaDirectorySetting).Permissions
+    #(Find-MgGraphCommand -Command New-MgBetaDirectorySetting).Permissions
 #[Boolean](Get-MgBetaDirectorySetting) # False
 #Get-MgBetaDirectorySetting -All | fl *
 
@@ -66,7 +66,9 @@ if(!($Setting = Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "
 # Get-MgBetaGroup -Filter "DisplayName eq 'M365-Directory-TeamsGroupCreation'" | fl *
 # M365-Directory-TeamsGroupCreation
 # M365-Directory-SecurityGroupCreation
-$groupId = (Get-MgBetaGroup -Filter "DisplayName eq 'M365-Directory-TeamsGroupCreation'").Id
+# $groupId = (Get-MgBetaGroup -Filter "DisplayName eq 'M365-Directory-TeamsGroupCreation'").Id
+$groupId = (Get-MgBetaGroup -Filter "DisplayName eq 'GroupCreators'").Id
+
 
 $params = @{
     Values = @(
