@@ -102,6 +102,8 @@ In this task, you will create via the Teams PowerShell a new team **“CA-Office
     New-Team -Displayname "CA-Office" -MailNickName "CA-Office" -Visibility Public
     ```
 
+    <mark>did you remove the Prefix before adding the new group?</mark>
+
 7. To add the user **Alex Wilber** to the team type the following cmdlet (Replacing <YourTenant> with the name of the Microsoft 365 Tenant provided to you.):
 
     ```powershell

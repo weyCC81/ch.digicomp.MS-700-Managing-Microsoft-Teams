@@ -91,6 +91,8 @@ $params.Values
 #New-AzureADDirectorySetting -DirectorySetting $Setting
 #    **Note:** Since this is a new tenant, there’s no directory settings object in the tenant yet. You need to use ```New-AzureADDirectorySetting``` to create a directory settings object for the first time.
 Update-MgBetaDirectorySetting -DirectorySettingId $Setting.Id -BodyParameter $params
+
+# -- Check new values
 (Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "Group.Unified"}).Values
 
 #Disconnect-MgGraph

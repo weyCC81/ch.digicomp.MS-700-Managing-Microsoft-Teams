@@ -36,11 +36,12 @@ $params.Values
 #Set-AzureADDirectorySetting -Id $Setting.Id -DirectorySetting $Setting
 #	**Note:** If there’s no directory settings object in the tenant yet. You need to use ```New-AzureADDirectorySetting``` to create a directory settings object for the first time.
 Update-MgBetaDirectorySetting -DirectorySettingId $Setting.Id -BodyParameter $params
-(Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "Group.Unified"}).Values
 
+# -- Check new values
+(Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "Group.Unified"}).Values
 
 #8. Disconnects the current session from an Azure Active Directory tenant and closes the PowerShell window.
 #Disconnect-AzureAD
-Disconnect-MgGraph
+#Disconnect-MgGraph
 
 

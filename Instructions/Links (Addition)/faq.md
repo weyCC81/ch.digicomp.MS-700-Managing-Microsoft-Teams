@@ -28,6 +28,16 @@ B2B Direct Connect = External User
 - AllowToAddGuests
 see [path2_graph-guest_optional.ps1]
 
+## Safe Links (Test, Validation)
+
+> Decode SafeLink URL
+<https://www.o365atp.com/>
+
+## Retention "Apply or remove encryption" not available
+>
+> not available
+<https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/microsoft-purview-paint-by-numbers-series-part-2g-recommended/ba-p/3846835>
+
 ## Calling Plan
 
 ### Calling Plan (Optional) - US
@@ -36,7 +46,7 @@ Contoso Emergency Address
 > 1 Microsoft Way, Redmond, WA 98052  
 > 1 NE One Microsoft Way, Redmond WA 98052, US, --> did not work
 
-Contoso  United States Emergency Address
+Contoso United States Emergency Address
 > One Microsoft Way, Redmond, WA 98052, Vereinigte Staaten  
 > 1 NE One Microsoft Way, Redmond WA 98052, US, --> did not work?
 
@@ -58,6 +68,13 @@ Review your information displayed below. If everything looks good, submit your o
     Location: Contoso  
     Quantity: 1  
     Reserved numbers: +1 581 702 4097  
+
+### Calling Plan (Optional) - CH
+
+Contoso Schweiz Emergency Address
+> Microsoft Schweiz GmbH
+> Talstrasse 9, 5037 Muhen
+> Talstrasse 9, Muhen Aargau, 5037, CH, --> you will be contacted by Microsoft (PSTN)
 
 ### Resource Account license allocation
 
@@ -88,3 +105,29 @@ Connect-MgGraph -ContextScope Process
 #Find-MgGraphCommand -Command *SettingTemplate*
 
 ```
+
+### Entra Export (Backup)
+
+<https://github.com/microsoft/EntraExporter>
+<https://office365itpros.com/2023/08/24/entraexporter-tool/>
+
+```powershell
+Install-Module EntraExporter -Scope Allusers
+
+Connect-MgGraph -Scopes 'Directory.Read.All', 'User.Read.All'
+Connect-EntraExporter
+#Export-Entra -Path 'C:\EntraID\' -All
+#Export-Entra -Path 'C:\EntraBackup\' -All -CloudUsersAndGroupsOnly
+Export-Entra -Path 'C:\EntraBackup\' -Type "Groups"
+
+#(Get-Command Export-Entra | Select-Object -Expand Parameters)['Type'].Attributes.ValidValues
+```
+
+### Dynamic Membership via MgGraph (anstelle von AzureAD)
+
+> skipped
+
+### Add or Remove M365 from Outlook (via PowerShell)
+
+> "resourceBehaviorOptions":["HideGroupInOutlook"]
+Source: <https://office365itpros.com/2022/03/29/create-entra-id-group/>
