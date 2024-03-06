@@ -682,10 +682,11 @@ In this task, you will test the blocked app.
 5. In the left-hand navigation pane, select **Teams**, go to the **General** channel of the **Sales** team.
 
 6. Select the **files** tab and select **+ Add cloud storage** in the navigation pane below.
+   <mark>The Files Register ist not available anymore, now named "OneDrive": <https://support.microsoft.com/en-us/office/add-a-cloud-storage-service-in-microsoft-teams-4e1e1a12-21ae-4616-b539-33d11e4cd68e><mark>
 
 	**Note**: You can reload the tab or select … if you didn’t see the option. This option is only for classic Teams.
    
-   - For the new lient version of Teams, do the following:
+   - For the new client version of Teams, do the following:
       	- Select the **files** tab
       	- Select the **Share** icon
       	- Select **Copy link**
