@@ -151,16 +151,13 @@ Classic Teams Folder: %appdata%\Microsoft\Teams
 New Teams: Programme > Teams > Advanced > Reset (instead of uninstall and re-install)
 New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe
 
-
-### Teams
-
-
 ### OneDrive Backup
 >
 > *Backup important PC folders to OneDrive*
 > OneDrive Backup is a cloud storage service by Microsoft that automatically backs up and syncs files from devices to the cloud, ensuring data safety and accessibility.
 
-<https://support.microsoft.com/de-de/office/aktivieren-von-onedrive-backup-4e44ceab-bcdf-4d17-9ae0-6f00f6080adb>
+- <https://support.microsoft.com/de-de/office/aktivieren-von-onedrive-backup-4e44ceab-bcdf-4d17-9ae0-6f00f6080adb>
+- Use GPO (ADMX) or Intune Policy to restrict OneDrive on the Client
 
 # Limit Files & OneDrive
 
