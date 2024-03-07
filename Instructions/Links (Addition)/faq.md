@@ -129,5 +129,41 @@ Export-Entra -Path 'C:\EntraBackup\' -Type "Groups"
 
 ### Add or Remove M365 from Outlook (via PowerShell)
 
-> "resourceBehaviorOptions":["HideGroupInOutlook"]
+> "resourceBehaviorOptions":["HideGroupInOutlook"]  
 Source: <https://office365itpros.com/2022/03/29/create-entra-id-group/>
+
+### Temporary recodring storage (upload failed)
+
+> 21 Days
+
+- <https://learn.microsoft.com/en-us/microsoftteams/meeting-recording?tabs=meeting-policy#temporary-storage-when-unable-to-upload-to-onedrive-and-sharepoint>
+
+### Voice routing policies (PSTN usage records)
+
+PSTN usage records define which calling plans or phone numbers users are allowed to use for making outbound calls. When configuring voice routing policies, administrators can assign PSTN usage records to specify the phone numbers or calling plans that users can access for making calls outside the organization.
+
+
+### Teams Cache (Classic vs New)
+
+- <https://learn.microsoft.com/en-us/microsoftteams/troubleshoot/teams-administration/clear-teams-cache>
+
+Classic Teams Folder: %appdata%\Microsoft\Teams
+New Teams: Programme > Teams > Advanced > Reset (instead of uninstall and re-install)
+New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe
+
+
+### Teams
+
+
+### OneDrive Backup
+>
+> *Backup important PC folders to OneDrive*
+> OneDrive Backup is a cloud storage service by Microsoft that automatically backs up and syncs files from devices to the cloud, ensuring data safety and accessibility.
+
+<https://support.microsoft.com/de-de/office/aktivieren-von-onedrive-backup-4e44ceab-bcdf-4d17-9ae0-6f00f6080adb>
+
+# Limit Files & OneDrive
+
+- Disable Files Tab in Teams: https://learn.microsoft.com/en-us/microsoftteams/turn-off-teams-native-file-upload-policy
+- Setup policies (remove OneDrive)
+- Read only for SharePoint Site (Teams): https://learn.microsoft.com/en-us/sharepoint/manage-lock-status
