@@ -142,7 +142,6 @@ Source: <https://office365itpros.com/2022/03/29/create-entra-id-group/>
 
 PSTN usage records define which calling plans or phone numbers users are allowed to use for making outbound calls. When configuring voice routing policies, administrators can assign PSTN usage records to specify the phone numbers or calling plans that users can access for making calls outside the organization.
 
-
 ### Teams Cache (Classic vs New)
 
 - <https://learn.microsoft.com/en-us/microsoftteams/troubleshoot/teams-administration/clear-teams-cache>
@@ -159,8 +158,13 @@ New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe
 - <https://support.microsoft.com/de-de/office/aktivieren-von-onedrive-backup-4e44ceab-bcdf-4d17-9ae0-6f00f6080adb>
 - Use GPO (ADMX) or Intune Policy to restrict OneDrive on the Client
 
-# Limit Files & OneDrive
+### Limit Files & OneDrive
 
-- Disable Files Tab in Teams: https://learn.microsoft.com/en-us/microsoftteams/turn-off-teams-native-file-upload-policy
+- Disable Files Tab in Teams: <https://learn.microsoft.com/en-us/microsoftteams/turn-off-teams-native-file-upload-policy>
 - Setup policies (remove OneDrive)
-- Read only for SharePoint Site (Teams): https://learn.microsoft.com/en-us/sharepoint/manage-lock-status
+- Read only for SharePoint Site (Teams): <https://learn.microsoft.com/en-us/sharepoint/manage-lock-status>
+
+### Teams Users - Unlicensed
+
+see [teams-user_unlicensed.png]
+Warning about "Teams Exploratory" License: <https://learn.microsoft.com/en-us/microsoftteams/teams-exploratory>
