@@ -93,7 +93,8 @@ $params.Values
 Update-MgBetaDirectorySetting -DirectorySettingId $Setting.Id -BodyParameter $params
 
 # -- Check new values
-(Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "Group.Unified"}).Values
+$GroupObjectID = (Get-MgBetaDirectorySetting | Where-Object { $_.DisplayName -eq "Group.Unified"}).Values; $GroupObjectID
+Get-MgBetaGroup -GroupId ($GroupObjectID | Where {$_.Name -like "GroupCreationAllowedGroupId"}).Value
 
 #Disconnect-MgGraph
 
