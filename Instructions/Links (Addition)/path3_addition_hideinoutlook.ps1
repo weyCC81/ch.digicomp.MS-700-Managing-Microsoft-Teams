@@ -1,10 +1,6 @@
 
 # Additional
 
-# -- Dynamic Membership via MgGraph (anstelle von AzureAd), 
-# > skipped
-
-
 #  -- Add or Remove M365 from Outlook (via MgGraph PowerShell)
 Connect-MgGraph -Scopes "Group.ReadWrite.All" -NoWelcome
 #(Find-MgGraphCommand -Command Get-MgGroup).Permissions
@@ -37,4 +33,5 @@ Set-UnifiedGroup -Identity Sales_13896087-3e43-4c33-a7c3-e66cd2aa39a9 -HiddenFro
 ##Set-UnifiedGroup -Identity Sales_13896087-3e43-4c33-a7c3-e66cd2aa39a9 -HiddenFromAddressListsEnabled: $false
 #Set-UnifiedGroup -Identity Sales_13896087-3e43-4c33-a7c3-e66cd2aa39a9 -HiddenFromExchangeClientsEnabled: $true
 
-
+# -- Dynamic Membership via MgGraph (anstelle von AzureAd), 
+# > skipped
