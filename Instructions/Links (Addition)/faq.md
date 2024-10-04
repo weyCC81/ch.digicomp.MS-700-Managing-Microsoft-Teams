@@ -20,22 +20,22 @@
 
 ## Guest User vs External User
 
-B2B Collaboration = Guest User
-B2B Direct Connect = External User
+- B2B Collaboration = Guest User
+- B2B Direct Connect = External User
 
 ## Restrict Team (Groups) to Join Guests
 
-- AllowToAddGuests
+- AllowToAddGuests  
 see [path2_graph-guest_optional.ps1]
 
 ## Safe Links (Test, Validation)
 
-> Decode SafeLink URL
+> Decode SafeLink URL  
 <https://www.o365atp.com/>
 
 ## Retention "Apply or remove encryption" not available
->
-> not available
+
+> not available  
 <https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/microsoft-purview-paint-by-numbers-series-part-2g-recommended/ba-p/3846835>
 
 ## Calling Plan
@@ -58,7 +58,7 @@ Contoso Canada Emergency Address
 > 2640 Boulevard Laurier, Québec QC G1V 4M6, CA, --> worked
 
 **Get numbers**  
-Get phone number support
+Get phone number support  
 Review your information displayed below. If everything looks good, submit your order. We'll let you know when your numbers are ready to go, or if there are any issues.
 
 **Requested:**  
@@ -72,8 +72,8 @@ Review your information displayed below. If everything looks good, submit your o
 ### Calling Plan (Optional) - CH
 
 Contoso Schweiz Emergency Address
-> Microsoft Schweiz GmbH
-> Talstrasse 9, 5037 Muhen
+> Microsoft Schweiz GmbH  
+> Talstrasse 9, 5037 Muhen  
 > Talstrasse 9, Muhen Aargau, 5037, CH, --> you will be contacted by Microsoft (PSTN)
 
 ### Resource Account license allocation
@@ -134,7 +134,7 @@ Source: <https://office365itpros.com/2022/03/29/create-entra-id-group/>
 
 ### Temporary recodring storage (upload failed)
 
-> 21 Days
+> 21 Days  
 
 - <https://learn.microsoft.com/en-us/microsoftteams/meeting-recording?tabs=meeting-policy#temporary-storage-when-unable-to-upload-to-onedrive-and-sharepoint>
 
@@ -144,15 +144,17 @@ PSTN usage records define which calling plans or phone numbers users are allowed
 
 ### Teams Cache (Classic vs New)
 
+> Clear Teams cache - Microsoft Teams | Microsoft Learn
+
 - <https://learn.microsoft.com/en-us/microsoftteams/troubleshoot/teams-administration/clear-teams-cache>
 
-Classic Teams Folder: %appdata%\Microsoft\Teams
-New Teams: Programme > Teams > Advanced > Reset (instead of uninstall and re-install)
-New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe
+Classic Teams Folder: %appdata%\Microsoft\Teams  
+New Teams: Programme > Teams > Advanced > Reset (instead of uninstall and re-install)  
+New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe  
 
 ### OneDrive Backup
->
-> *Backup important PC folders to OneDrive*
+
+> *Backup important PC folders to OneDrive*  
 > OneDrive Backup is a cloud storage service by Microsoft that automatically backs up and syncs files from devices to the cloud, ensuring data safety and accessibility.
 
 - <https://support.microsoft.com/de-de/office/aktivieren-von-onedrive-backup-4e44ceab-bcdf-4d17-9ae0-6f00f6080adb>
@@ -166,5 +168,31 @@ New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe
 
 ### Teams Users - Unlicensed
 
-see [teams-user_unlicensed.png]
+see [teams-user_unlicensed.png]  
 Warning about "Teams Exploratory" License: <https://learn.microsoft.com/en-us/microsoftteams/teams-exploratory>
+
+
+## Voicemail
+
+- Transfer number
+- Custom Voicemail
+
+## People (Contact Sync)
+
+https://app.cloudscout.one/evergreen-item/mc695487/
+
+## Self-Diagnostics (In Teams)
+
+> Self-help diagnostics for Teams administrators - Microsoft Teams | Microsoft Learn  
+
+- <https://learn.microsoft.com/microsoftteams/troubleshoot/teams-administration/admin-self-help-diagnostics>
+
+## Voice Isolation
+
+[Erklärung/Video]
+
+
+```powershell
+Set-CsTeamsMeetingPolicy -Identity <policy name> -EnrollUserOverride Enabled
+Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceIsolation Enabled
+```

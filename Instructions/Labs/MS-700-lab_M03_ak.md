@@ -172,6 +172,8 @@ In this task, you will test the Graph API capabilities for certain automation pl
 
 9. Scroll to the right and select the **Consent** button for the permissions **Team.Create**.
 
+    <mark>Change 'Get' to 'POST' in query if "Team.Create" Permission is not available</mark>
+
 10. Another **Permissions requested** page appears. Select **Accept**.
 
 11. If you are redirected to the Microsoft Developers site, navigate back to the **Graph Explorer** at: [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer)
