@@ -89,3 +89,38 @@ Update-MgBetaDirectorySetting -DirectorySettingId $grpUnifiedSetting.Id -BodyPar
 
 $Setting = Get-MgBetaDirectorySetting -DirectorySettingId $grpUnifiedSetting.Id
 $Setting.Values
+
+# -- Tag 3
+
+# Set-MgGroup -Id $groupId -GroupTypes $groupTypes.ToArray() -MembershipRuleProcessingState "On" -MembershipRule $dynamicMembershipRule
+Get-MgGroup -GroupId 8d96b825-ec65-45bf-b782-7c71dd40c2ba | fl *, GroupTypes
+
+#GroupTypes                    : {DynamicMembership, Unified}
+#MembershipRule                : (user.department -eq "Sales")
+#MembershipRuleProcessingState : On
+
+# -- Tag 4
+
+
+Connect-MicrosoftTeams
+
+#Get-CsOnlineTelephoneNumber | ft Id,ActivationState
+Get-CsPhoneNumberAssignment | ft TelephoneNumber, ActivationState
+
+#Get-CsOnlineLisLocation -ValidationStatus Validated
+Get-CsOnlineLisLocation | ft Description, Company*, Street*, ValidationStatus
+
+# Grant-CsTenantDialPlan
+# Get-CsDialPlan | Out-GridView
+Get-CsDialPlan -Identity "Tag:US"
+
+
+# Set-CsPhoneNumberAssignment -Identity "<User name>" -EnterpriseVoiceEnabled $true
+Get-CsPhoneNumberAssignment | ft TelephoneNumber, ActivationState, NumberType, *Voice*, *Enterprise*
+
+# Grant-CsOnlineVoiceRoutingPolicy
+Get-CsOnlineVoiceRoutingPolicy | ft
+
+# Grant-CsTeamsCallingPolicy
+# Get-CsTeamsCallingPolicy | Out-GirdView
+Get-CsTeamsCallingPolicy | ft
