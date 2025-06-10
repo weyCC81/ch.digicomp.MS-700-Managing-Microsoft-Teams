@@ -9,7 +9,7 @@ Install-Module -Name Microsoft.Graph
 
 Connect-MicrosoftTeams #-NoWelcome
 Connect-MgGraph -NoWelcome
-Connect-MgGraph -Scopes "Team.ReadBasic.All, Group.ReadWrite.All" -NoWelcome 
+Connect-MgGraph -Scopes "Team.ReadBasic.All, Group.ReadWrite.All" -NoWelcome
 
 
 
@@ -35,6 +35,10 @@ Get-CsTenantFederationConfiguration
 # ExternalAccessWithTrialTenants              : Blocked
 Set-CsTenantFederationConfiguration -ExternalAccessWithTrialTenants "Allowed"
 
+#Get-Module #-Name
+#Update-Module MicrosoftTeams -Scope AllUsers
+#Connect-MicrosoftTeams
+#Set-CsTenantFederationConfiguration -ExternalAccessWithTrialTenants "Allowed"
 
 #Disconnect-MicrosoftTeams
 #Disconnect-MgGraph

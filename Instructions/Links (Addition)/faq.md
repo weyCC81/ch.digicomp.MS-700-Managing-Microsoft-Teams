@@ -26,9 +26,12 @@
 ## Restrict Team (Groups) to Join Guests
 
 - AllowToAddGuests  
-<!-- see [path2_graph-guest_optional.ps1] -->
 
-![Teams unlicensed](path2_graph-guest_optional.ps1)
+> see Script: [path2_graph-guest_optional.ps1]
+
+<!--
+![images](path2_graph-guest_optional.ps1)
+-->
 
 ## Safe Links (Test, Validation)
 
@@ -209,6 +212,12 @@ https://support.microsoft.com/office/voice-isolation-in-microsoft-teams-calls-an
 Set-CsTeamsMeetingPolicy -Identity <policy name> -EnrollUserOverride Enabled
 Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceIsolation Enabled
 ```
+
+## Cross tenant config (Shared Channel)
+
+<!--
+[ToDo]
+-->
 
 ## Course
 
