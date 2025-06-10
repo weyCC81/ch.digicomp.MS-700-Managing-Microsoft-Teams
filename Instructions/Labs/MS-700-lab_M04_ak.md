@@ -158,7 +158,7 @@ The IT department wants to host a company-wide meeting to answer employees’ qu
 
 	**Note**: When you save the event, invites will be sent to presenters and co-organizers automatically. 
 
-4. Review the **Meeting options**, the **Presenter bios** and **Theming**, by selecting the options on the left hand side navigation. Press **Save** if prompte first.
+4. Review the **Meeting options** by selecting the options on the left hand side navigation. Press **Save** if prompted first.
 
 5. Complete the Registration site configuration. On the **IT Office Hours | Microsoft Teams** tab, at the left, expand **Registration** and select **Configuration**. Enter the following information and then select **Save**: 
 
@@ -251,7 +251,7 @@ During the planning phase of Teams Phones devices in your organization, you want
 
 	- Logging enabled: **Off**
 
-	- Device’s default admin password: **Pass@word1**
+	- Device’s admin password: **Pass@word1**
 
 8. Once you complete with the configuration profile settings, select **Save**.
 
@@ -364,7 +364,7 @@ In this task, you will order a phone number for a user with an assigned Calling 
 
 2. In the **Microsoft Teams client** sign in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
 
-3. Navigate to the **Teams admin center** at [**https://admin.teams.microsoft.com/**](https://admin.teams.microsoft.com/).
+3. Navigate to the **Teams admin center** at [**https://admin.teams.microsoft.com/**](https://admin.teams.microsoft.com/), as Joni Sherman.
 
 4. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
 
@@ -390,7 +390,7 @@ In this task, you will order a phone number for a user with an assigned Calling 
 
 		- Search **Redmond** and select **Contoso Emergency Address**, which is the location you just created.
 
-		- Select Area code **425**.
+		- Select Area code available.
 
 		- Select **Next**.
 
@@ -448,7 +448,7 @@ As part of your pilot project for calling functionalities with Microsoft Teams, 
 
 4. Select the **Global (Org-wide default)** policy to edit the default settings.
 
-5. In **Calling policies\Global**, use the dropdown menu to the right of **Voicemail is available for inbound calls** and select **Off**. Then select **Save** and **Confirm**.
+5. In **Calling policies\Global**, use the dropdown menu to the right of **Voicemail for inbound calls** and select **Off**. Then select **Save** and **Confirm**.
 
 6. Back on the **Calling policies** page, select **+ Add** on the top pane, to create a new policy.
 
@@ -458,7 +458,7 @@ As part of your pilot project for calling functionalities with Microsoft Teams, 
 
 	- Description: **Calling policy that allows voicemail for selected pilot users**.
 
-	- Voicemail is available for inbound calls: **On**
+	- Voicemail for inbound calls: **On**
 
 8. Select **Save** to create the new policy.
 
@@ -474,11 +474,11 @@ In this task, you have disabled voicemail for all users in the organizations, an
 
 Contoso Ltd. has deployed Microsoft Teams voice functionalities throughout the organization. To deploy some automation for incoming support calls, the calling queue functionalities need to be tested before being rolled out. The following settings shall be configured for customers calling in:
 
-1. A greeting message.
+- A greeting message.
 
-2. Music while people are waiting on hold.
+- Music while people are waiting on hold.
 
-3. Redirecting calls to call agents in mail-enabled distribution lists and security groups.
+- Redirecting calls to call agents in mail-enabled distribution lists and security groups.
 
 As Teams admin, you are responsible for creating the call queue and configuring different parameters, such as maximum queue size, timeout, and call handling options.
 
@@ -530,7 +530,7 @@ As Teams admin, you are responsible for creating the call queue and configuring 
 
 	- Call agents can opt out of taking calls: **On**
 
-	- Call agent alert time: **30 seconds**, seelct **Next**.
+	- Call agent alert time: **30 seconds**, select **Next**.
 
 	- Under the **Exception handling** page, expand **Call overflow** and et Maximum calls in the queue: **50**
 
