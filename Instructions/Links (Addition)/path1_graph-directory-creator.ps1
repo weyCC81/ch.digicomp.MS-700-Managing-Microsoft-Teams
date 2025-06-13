@@ -1,6 +1,8 @@
 
 # ---- Preparation
-https://learn.microsoft.com/en-us/entra/identity/users/groups-settings-cmdlets
+# https://learn.microsoft.com/en-us/entra/identity/users/groups-settings-cmdlets
+# > beta = working: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting
+# > v1.0 = not available yet: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysetting
 
 # Install-Module -Name MicrosoftTeams -Scope AllUsers
 

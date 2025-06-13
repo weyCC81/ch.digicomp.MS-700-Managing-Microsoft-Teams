@@ -50,6 +50,7 @@
 Contoso Emergency Address
 > 1 Microsoft Way, Redmond, WA 98052  
 > 1 NE One Microsoft Way, Redmond WA 98052, US, --> did not work
+> 1 Northeast One Microsoft Way, Redmond, WA 98052 --> worked
 
 Contoso United States Emergency Address
 > One Microsoft Way, Redmond, WA 98052, Vereinigte Staaten  
@@ -89,7 +90,7 @@ Your organization is allotted Teams Phone Resource Account licenses based on its
 
 For <mark>every 10 user</mark> licenses of Teams Phone Standard, Teams Phone with Calling Plan, or devices with Teams Shared Devices license in your organization, <mark>one more Teams Phone Resource Account license becomes available</mark>. Most organizations will have enough Teams Phone Resource Account licenses based on this scaling plan.
 
-### PowerShell Snippet
+## PowerShell Snippet
 
 ```powershell
 Install-Module -Name MicrosoftTeams -Scope AllUsers
@@ -140,7 +141,7 @@ Source: <https://office365itpros.com/2022/03/29/create-entra-id-group/>
 
 ## Temporary recodring storage (upload failed)
 
-> 21 Days (Async media storage=ASMS)
+> 21 Days (Async media storage=ASMS, Azure Media Services = AMS)
 
 - <https://learn.microsoft.com/en-us/microsoftteams/meeting-recording?tabs=meeting-policy#temporary-storage-when-unable-to-upload-to-onedrive-and-sharepoint>
 - <https://learn.microsoft.com/en-us/microsoftteams/tmr-meeting-recording-change>
@@ -159,7 +160,7 @@ Classic Teams Folder: %appdata%\Microsoft\Teams
 New Teams: Programme > Teams > Advanced > Reset (instead of uninstall and re-install)  
 New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe  
 
-## OneDrive Backup
+## OneDrive Backup (Mirror, Copy)
 
 > *Backup important PC folders to OneDrive*  
 > OneDrive Backup is a cloud storage service by Microsoft that automatically backs up and syncs files from devices to the cloud, ensuring data safety and accessibility.
@@ -167,7 +168,7 @@ New Teams Folder: %localappdata%\Packages\MSTeams_8wekyb3d8bbwe
 - <https://support.microsoft.com/de-de/office/aktivieren-von-onedrive-backup-4e44ceab-bcdf-4d17-9ae0-6f00f6080adb>
 - Use GPO (ADMX) or Intune Policy to restrict OneDrive on the Client
 
-## Limit Files & OneDrive
+## Limit/Block - Files Tab & OneDrive Folder
 
 - Disable Files Tab in Teams: <https://learn.microsoft.com/en-us/microsoftteams/turn-off-teams-native-file-upload-policy>
 - Setup policies (remove OneDrive)
@@ -187,7 +188,7 @@ Warning about "Teams Exploratory" License: <https://learn.microsoft.com/en-us/mi
 
 -->
 
-## People (Contact Sync)
+## People (Contact Sync, Calling)
 
 > In the interim, we have completed one time migration of Teams, contacts to outlook contact store but any changes in Outlook will not reflect in Teams and vice versa. This will be enabled in next steps for this effort.
 
@@ -201,20 +202,24 @@ Source: <https://app.cloudscout.one/evergreen-item/mc695487/>
 
 ## Voice Isolation
 
--[Voice isolation in Microsoft Teams calls and meetings - Microsoft Support](
+- [Voice isolation in Microsoft Teams calls and meetings - Microsoft Support](
 https://support.microsoft.com/office/voice-isolation-in-microsoft-teams-calls-and-meetings-a9756ea9-4cec-44c4-aefb-6f5d17c89427)
 
 > In bustling environments like airports, crowded workspaces, or remote setups with background chatter, ambient noise can disrupt Teams calls and meetings. Voice isolation, an advanced level of noise suppression that uses AI to filter for your voice only from surrounding noise and other voices, ensures clear communication without distractions for your colleagues or clients during your Teams meetings.  
 
-> Erklärung/Video
+>> Erklärung/Video
 
 ```powershell
 Set-CsTeamsMeetingPolicy -Identity <policy name> -EnrollUserOverride Enabled
 Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceIsolation Enabled
 ```
 
+![alt text](image.png)
+![alt text](image-1.png)
+
 ## Cross tenant config (Shared Channel)
 
+> N/A
 <!--
 [ToDo]
 -->
@@ -224,8 +229,16 @@ Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceIsolation Enabled
 ### Cert
 
 - <https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/?practice-assessment-type=certification>
-- 3 Parts (30x Multiple Choice, 2-3xUseCase, 3xQuestion[3x Answers])
+- 3 Parts (30x Multiple Choice, 2-3x UseCase, 3x Question[3x Answers])
 
+<!--
 ### Badge
 
 [Get achievement badge] (via learning pipe)
+-->
+
+## Safe Links (URL Testing)
+
+- <https://demo.wd.microsoft.com>
+- <https://demo.wd.microsoft.com/Page/UrlRep>
+- <https://demo.smartscreen.msft.net/>
